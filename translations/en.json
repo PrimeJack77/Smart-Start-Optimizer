@@ -1,0 +1,21 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Start Optimizer (Spot Price)",
+                "description": "Set the parameters to find the cheapest start time.",
+                "data": {
+                    "name": "Sensor Name (e.g., Optimal Washing Machine)",
+                    "epex_entity": "Entity containing prices (EPEX Spot)",
+                    "load_profile": "Load Profile (Consumption in kWh every 15 min, comma-separated)"
+                }
+            }
+        },
+        "error": {
+            "invalid_profile": "Error: The profile must be a list of comma-separated numbers (e.g., 0.5, 0.4, 0.1)."
+        },
+        "abort": {
+            "already_configured": "This device is already configured."
+        }
+    }
+}

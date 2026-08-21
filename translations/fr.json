@@ -1,0 +1,21 @@
+{
+    "config": {
+    "step": {
+        "user": {
+        "title": "Optimiseur de lancement (Prix Spot)",
+        "description": "Définissez les paramètres pour trouver le lancement le moins cher.",
+        "data": {
+            "name": "Nom du capteur (ex: Lave Linge Optimal)",
+            "epex_entity": "Entité contenant les prix (EPEX Spot)",
+            "load_profile": "Courbe de charge (Consommation en kWh toutes les 15min, séparée par des virgules)"
+        }
+        }
+    },
+    "error": {
+        "invalid_profile": "Erreur : La courbe doit être une liste de nombres séparés par des virgules (ex: 0.5, 0.4, 0.1)."
+    },
+    "abort": {
+        "already_configured": "Cet appareil est déjà configuré."
+    }
+    }
+}
